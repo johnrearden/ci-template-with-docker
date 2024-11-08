@@ -1,5 +1,4 @@
-image:
-  file: .gitpod.dockerfile
+image: johnrearden/ci-gitpod-image:latest
 tasks:
   - init: . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
     command: /home/gitpod/.pg_ctl/bin/pg_start > /dev/null
